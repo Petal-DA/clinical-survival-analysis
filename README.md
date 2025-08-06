@@ -17,7 +17,20 @@
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+* Stage is associated with shorter survival time
+    - Validate via ANOVA or regression coefficient.
+
+* KRAS mutations are associated with higher mortality risk
+    - "Mutation" is simplified as any change in the KRAS gene detected in the dataset 
+      (e.g., G12 or G13 codon variants) versus wild-type (no mutation detected).
+    - Validate via logistic regression using Event (0/1) as outcome and KRAS status as predictor.
+    - Include Fisher's exact or Chi-square test for categorical comparison of mutation vs event.
+
+* Driver mutations (KRAS or EGFR) are associated with higher mortality risk
+    - Simplifies clinical genomic data for non-specialist interpretation.
+    - Validate via logistic regression and categorical testing.
+
+
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -33,9 +46,27 @@
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+## Limitations and Ethical considerations
+This project uses a clinical dataset of 125 patient records (30 in the discovery cohort and 95 in the validation cohort). While modest by machine learning standards, this size is representative of many real-world clinical studies, where:
+    • Patient recruitment is challenging due to strict eligibility criteria.
+    • Early-phase or condition-specific trials often enroll dozens to low hundreds of participants.
+    • Larger, multi-center Phase III or IV studies may reach several hundred or thousands, but are less common for exploratory or single-institution studies.
+Limitations and Impact on Analysis
+    • Machine Learning Constraints
+        ○ Small datasets increase the risk of overfitting and reduce generalizability.
+        ○ Simple, interpretable models (linear and logistic regression) were chosen over complex algorithms to reflect responsible use of limited data.
+    • Statistical Power
+        ○ Hypothesis testing and regression analyses may have wider confidence intervals and lower sensitivity to small effects.
+        ○ Findings are therefore exploratory and hypothesis-generating, rather than conclusive.
+Bias and Representativeness
+    • Small sample sizes can overrepresent or underrepresent certain patient subgroups, introducing potential sampling bias.
+    • Event imbalance (alive vs deceased) may impact classification accuracy.
+    • All results are presented with contextual caveats, avoiding overgeneralization.
+Privacy and Responsible Reporting
+    • Data is fully de-identified, ensuring patient confidentiality.
+    • Analytical outputs are reported with caution and transparency, emphasizing that results are illustrative and educational.
+    • Future studies with larger, multi-center cohorts would enhance predictive power and clinical applicability.
+
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
