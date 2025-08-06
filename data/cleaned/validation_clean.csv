@@ -1,0 +1,96 @@
+Patient ID,Survival time (days),"Event (death: 1, alive: 0)",Tumor size (cm),Grade,Age,Pack per year,batch,EGFR,KRAS,Stage (TNM 8th edition)_IA3,Stage (TNM 8th edition)_IB,Stage (TNM 8th edition)_IIA,Stage (TNM 8th edition)_IIB,Stage (TNM 8th edition)_IIIA,Stage (TNM 8th edition)_IIIB,Stage (TNM 8th edition)_IVA,Stage (TNM 8th edition)_Recurrence,Sex_Male,Type.Adjuvant_Chemorad,Type.Adjuvant_No_Adjuvant_Therapy,Type.Adjuvant_XRT,EGFR_status_Wild-type,KRAS_status_Wild-type,Cigarette_Former,Cigarette_Never
+P109342,2329,1,2.6,3,67,50.0,1,Unknown,Unknown,False,True,False,False,False,False,False,False,True,False,True,False,False,False,True,False
+P124450,2532,0,3.5,3,68,52.5,1,Negative,Negative,False,True,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P131833,2271,0,2.0,2,80,0.0,1,Negative,Negative,False,False,False,False,False,False,False,False,False,False,True,False,True,True,False,True
+P131888,2193,0,3.0,2,63,47.0,1,Negative,G12C,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True,False
+P131946,2387,0,4.0,2,88,0.0,1,Negative,Negative,False,False,False,False,True,False,False,False,False,False,True,False,True,True,False,True
+P132011,2225,0,2.5,2,66,14.0,1,Negative,Negative,True,False,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P132044,2240,0,2.2,3,69,90.0,2,Negative,Negative,True,False,False,False,False,False,False,False,True,False,True,False,True,True,True,False
+P132062,2314,0,1.2,3,52,23.0,2,Negative,Negative,False,False,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P132115,299,1,2.8,1,67,30.0,2,Negative,G12C,False,False,False,False,True,False,False,False,False,False,True,False,True,False,False,False
+P132234,2295,0,2.0,2,59,11.25,1,Exon 19,Unknown,False,False,False,False,False,False,False,False,True,False,True,False,False,False,True,False
+P132547,2135,0,6.3,3,67,5.0,1,Negative,Negative,False,False,False,False,True,False,False,False,True,False,True,False,True,True,True,False
+P132587,1956,0,5.0,2,69,32.0,1,Negative,Negative,False,False,True,False,False,False,False,False,False,False,False,False,True,True,True,False
+P132630,2278,0,3.6,2,80,0.1,2,Exon 19,Unknown,False,True,False,False,False,False,False,False,False,False,True,False,False,False,True,False
+P132635,1927,1,2.8,2,51,31.5,1,Negative,Negative,False,False,False,False,False,False,False,True,False,False,True,False,True,True,True,False
+P132650,837,1,3.5,3,68,0.0,2,Exon 21,Unknown,False,True,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P132654,453,1,2.3,2,61,20.0,1,Negative,G12C,False,False,False,True,False,False,False,False,True,False,False,False,True,False,True,False
+P132666,2238,0,3.2,2,52,18.5,2,Negative,Negative,False,True,False,False,False,False,False,False,False,False,True,False,True,True,False,False
+P132696,2248,0,1.8,2,56,3.0,2,Negative,Unknown,False,True,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P132723,1435,1,5.0,2,73,0.0,2,Exon 21,Unknown,False,False,False,False,True,False,False,False,True,False,True,False,False,False,False,True
+P132828,1922,0,3.9,2,74,1.25,2,Exon 19,Unknown,False,True,False,False,False,False,False,False,True,False,True,False,False,False,True,False
+P132897,1300,1,2.4,2,52,13.0,2,Exon 19,Unknown,False,False,False,False,False,False,True,False,False,False,False,False,False,False,True,False
+P132963,2318,0,2.8,3,61,0.0,2,Negative,Negative,True,False,False,False,False,False,False,False,False,False,False,False,True,True,False,True
+P133009,2059,0,2.5,2,57,0.0,2,Exon 19,Unknown,False,True,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P133030,1865,0,2.8,2,65,5.0,2,Exon 19,Unknown,False,True,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+P133041,978,0,2.4,3,67,105.0,2,Negative,Negative,False,True,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P133066,1961,0,2.5,3,77,40.0,2,Negative,Negative,True,False,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P133185,2240,0,2.3,2,85,19.0,1,Exon 19,Unknown,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+P133204,2186,0,3.5,2,51,50.0,1,Negative,G12C,False,True,False,False,False,False,False,False,False,False,True,False,True,False,False,False
+P133247,2041,1,1.7,2,79,18.75,1,Negative,G12V,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P133255,1810,1,1.1,3,85,45.0,1,Negative,Negative,False,False,False,False,False,False,False,False,True,False,True,False,True,True,True,False
+P133436,2237,1,2.2,2,79,20.0,2,Negative,G12V,False,False,False,False,True,False,False,False,True,False,True,False,True,False,True,False
+P133537,647,1,6.0,2,72,100.0,1,Negative,Negative,False,False,False,False,False,True,False,False,False,False,False,False,True,True,True,False
+P133662,874,1,1.2,3,65,92.0,1,Negative,G12C,False,False,False,False,False,True,False,False,False,False,True,False,True,False,True,False
+P133688,2021,0,1.7,3,58,3.0,1,Negative,G12F,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P133733,2256,0,2.0,2,81,0.0,1,Exon 21,Unknown,False,True,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P136520,66,1,4.7,2,67,0.0,3,Exon 21 (L858R),Unknown,False,False,False,True,False,False,False,False,False,False,False,False,False,False,False,True
+P136577,855,1,3.2,2,70,0.0,3,Negative,Negative,False,False,False,True,False,False,False,False,False,False,True,False,True,True,False,True
+P136605,631,1,2.5,2,65,30.0,3,Negative,Negative,True,False,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P136609,592,1,1.5,3,60,68.0,3,Unknown,Unknown,False,False,False,False,False,False,False,True,False,False,True,False,False,False,True,False
+P136669,1435,0,2.3,1,48,15.0,3,Negative,G12D,True,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P136683,1760,1,2.0,3,68,40.0,3,Negative,Negative,False,False,False,False,False,False,False,False,True,False,True,False,True,True,True,False
+P136684,228,0,1.4,2,61,0.0,3,Exon 21 (L858R),Unknown,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P136690,1079,1,1.6,2,82,20.0,3,Negative,G12V,False,True,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P136698,2022,0,1.7,2,65,43.0,3,Negative,G12C,False,False,False,False,True,False,False,False,False,False,False,False,True,False,False,False
+P136762,2059,0,6.8,2,63,43.0,3,Negative,Negative,False,False,False,True,False,False,False,False,False,False,False,False,True,True,True,False
+P136782,1614,0,1.6,2,72,25.0,3,Negative,G12C,False,True,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P136783,1904,0,1.2,3,77,0.0,3,Negative,Negative,False,False,False,False,False,False,False,False,False,False,True,False,True,True,False,True
+P136854,895,1,1.5,1,56,40.0,3,Negative,G12V,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False
+P136866,1986,0,2.6,2,61,0.0,3,Exon 19 (24bp delete),Unknown,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P136877,1546,0,6.5,2,59,0.0,3,Negative,G12V,False,False,False,True,False,False,False,False,False,False,False,False,True,False,False,True
+P136903,135,0,2.4,3,72,53.0,3,Negative,Unknown,True,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137017,990,0,3.5,3,78,60.0,3,Negative,G12F,False,False,False,True,False,False,False,False,False,False,True,False,True,False,False,False
+P137024,1976,0,2.0,3,63,40.0,3,Negative,G12V,False,False,False,True,False,False,False,False,True,False,False,False,True,False,True,False
+P137026,942,1,3.1,3,60,0.0,3,Negative,Negative,False,False,False,False,True,False,False,False,True,True,False,False,True,True,False,True
+P137038,1373,1,6.2,3,63,43.0,3,Negative,Negative,False,False,False,False,True,False,False,False,True,False,False,False,True,True,False,False
+P137103,1161,1,1.6,2,88,60.0,3,Negative,G12C,False,True,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137125,354,1,4.0,3,58,19.0,3,Negative,G12D,False,False,False,False,True,False,False,False,True,False,False,False,True,False,False,False
+P137147,676,1,3.0,3,55,45.0,3,Unknown,Unknown,True,False,False,False,False,False,False,False,False,True,False,False,False,False,True,False
+P137149,1579,1,1.7,3,74,30.0,3,Exon 19 (9bp delete),Unknown,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,False
+P137152,1886,0,2.4,2,64,0.0,3,Negative,Negative,True,False,False,False,False,False,False,False,True,False,True,False,True,True,False,True
+P137234,1834,0,2.4,2,55,15.0,3,Negative,G12A,False,False,False,True,False,False,False,False,False,False,True,False,True,False,True,False
+P137235,811,1,4.2,3,51,0.0,3,Unknown,Unknown,False,False,False,False,True,False,False,False,False,True,False,False,False,False,False,True
+P137246,1057,1,5.1,3,64,33.75,3,Negative,Negative,False,False,False,True,False,False,False,False,False,False,True,False,True,True,True,False
+P137308,1937,0,1.4,2,61,0.0,3,Unknown,Unknown,False,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P137334,681,1,2.4,3,67,25.0,3,Negative,G13C,False,False,False,False,True,False,False,False,False,False,False,True,True,False,True,False
+P137343,579,1,4.2,3,62,62.5,3,Negative,Negative,False,False,True,False,False,False,False,False,True,False,True,False,True,True,True,False
+P137373,208,1,3.5,3,63,0.0,3,Unknown,Unknown,False,True,False,False,False,False,False,False,True,False,True,False,False,False,False,True
+P137380,1860,0,4.0,2,55,45.0,3,Negative,G13F,False,True,False,False,False,False,False,False,False,False,False,False,True,False,True,False
+P137385,1862,0,4.0,2,66,36.0,3,Negative,Negative,False,True,False,False,False,False,False,False,False,False,True,False,True,True,True,False
+P137399,768,0,1.1,3,67,75.0,3,Negative,G12D,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137498,1841,0,1.8,1,61,35.0,3,Negative,Negative,False,False,False,False,False,False,False,False,True,False,True,False,True,True,True,False
+P137503,366,1,6.0,3,57,60.0,3,Negative,G12C,False,False,False,False,True,False,False,False,True,False,True,False,True,False,True,False
+P137513,1349,1,2.1,3,67,52.0,3,Exon 19 (9bp delete),Unknown,True,False,False,False,False,False,False,False,False,False,False,False,False,False,True,False
+P137547,1834,1,1.8,2,69,30.0,3,Unknown,Unknown,False,False,False,False,False,False,False,False,True,False,True,False,False,False,True,False
+P137565,1054,1,4.0,3,53,25.0,3,Exon 19 (15bp delete),Unknown,False,False,False,False,False,True,False,False,False,True,False,False,False,False,True,False
+P137574,1353,1,2.0,2,72,38.0,3,Unknown,Unknown,False,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False
+P137591,923,1,1.5,3,57,10.0,3,Negative,G12D,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137687,902,0,1.3,3,85,64.0,3,Negative,G12V,False,False,False,False,False,False,False,False,False,False,True,False,True,False,False,False
+P137753,1868,0,3.5,2,83,20.0,3,Negative,Negative,False,True,False,False,False,False,False,False,True,False,True,False,True,True,True,False
+P137757,1430,0,2.9,2,78,40.0,3,Unknown,Unknown,True,False,False,False,False,False,False,False,False,False,True,False,False,False,True,False
+P137758,50,0,2.5,3,62,62.5,3,Negative,Negative,False,False,False,False,True,False,False,False,True,False,True,False,True,True,True,False
+P137783,1217,1,2.0,3,75,67.5,3,Negative,G13R,False,True,False,False,False,False,False,False,True,False,True,False,True,False,True,False
+P137788,335,0,7.0,3,51,0.0,3,Negative,Negative,False,False,False,True,False,False,False,False,False,False,True,False,True,True,False,True
+P137828,403,0,2.4,2,67,0.0,3,Exon 19 (15bp delete),Unknown,True,False,False,False,False,False,False,False,False,False,True,False,False,False,False,True
+P137838,1945,0,2.5,1,68,20.0,3,Negative,G12R,True,False,False,False,False,False,False,False,True,False,True,False,True,False,True,False
+P137889,819,1,3.5,2,80,0.0,3,Exon 21 (L858R),Unknown,False,False,False,True,False,False,False,False,False,False,True,False,False,False,False,True
+P137905,1881,0,1.9,2,77,60.0,3,Negative,G13D,False,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137941,1207,0,2.3,3,59,12.5,3,Negative,G12D,True,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137965,1889,0,2.2,2,83,51.0,3,Exon 21 (L858R),Negative,True,False,False,False,False,False,False,False,False,False,True,False,False,True,True,False
+P137974,1033,1,3.0,3,73,64.5,3,Negative,G12A,True,False,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P137984,1919,0,1.8,1,67,40.0,3,Negative,G12D,False,False,False,False,False,False,False,False,True,False,True,False,True,False,True,False
+P138002,1911,0,2.3,3,71,45.0,3,Negative,Negative,True,False,False,False,False,False,False,False,True,False,True,False,True,True,False,False
+P138007,1935,0,2.8,3,68,60.0,3,Negative,G12V,False,False,False,True,False,False,False,False,False,False,False,False,True,False,True,False
+P138013,1760,0,2.4,2,50,16.0,3,Negative,G12A,False,True,False,False,False,False,False,False,False,False,True,False,True,False,True,False
+P138014,1922,0,2.1,2,69,0.0,3,Exon 19,Unknown,False,False,False,False,False,False,False,True,False,False,True,False,False,False,False,True
