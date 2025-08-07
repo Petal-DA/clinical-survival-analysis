@@ -1,6 +1,7 @@
 # Capstone Project - Clinical Survival Analysis
 
-**Clinical Survival** This project investigates clinical survival data with the aim of uncovering patterns in patient outcomes based on tumour characteristics and genetic mutation status. It combines data cleaning, exploratory analysis, and interactive visualisations to support clear, evidence-based insights. The analysis is tailored for data analysts, developers, and non-clinical stakeholders interested in healthcare data interpretation, with visual tools built in Python (matplotlib, seaborn, Plotly) and Tableau.
+**Clinical Survival** 
+This project investigates clinical survival data with the aim of uncovering patterns in patient outcomes based on tumour characteristics and genetic mutation status. It combines data cleaning, exploratory analysis, and interactive visualisations to support clear, evidence-based insights. The analysis is tailored for data analysts, developers, and non-clinical stakeholders interested in healthcare data interpretation, with visual tools built in Python (matplotlib, seaborn, Plotly) and Tableau.
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
@@ -38,18 +39,44 @@ Mutation columns (KRAS, EGFR) are simplified for interpretability:
     - Validate via logistic regression and categorical testing.
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+This project followed a structured, end-to-end data science workflow consisting of:
+
+* Data Ingestion & Understanding:
+Two datasets (discovery and validation cohorts) were loaded and reviewed for structure, completeness, and relevance to the business goals.
+* Data Cleaning & Preparation:
+Column names were standardized, missing data handled appropriately, and categorical variables (e.g. mutation status, stage) were simplified for interpretability.
+* Exploratory Data Analysis (EDA):
+Distribution plots and survival-time comparisons were generated using Python visualisation libraries (matplotlib, seaborn, plotly). Key survival-related variables were identified.
+* Modelling:
+Predictive models developed to explore how clinical and genomic factors influence survival outcomes.
+* Dashboard & Communication:
+Tableau used to build a visual analytics dashboard designed for stakeholders without technical or clinical backgrounds.
+* Interpretation & Documentation:
+Results were interpreted in context, with transparent assumptions and limitations outlined throughout.
+
+This plan aligns with industry-standard data science pipelines while being flexible enough to accommodate clinical data constraints.
+
 
 ## Rationale to map Business Requirements to Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+| Business Requirement                                  | Visualisation Type                           | Rationale                                                                                                      |
+| ----------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Assess survival by stage                              | Seaborn boxplot (Python)                     | Boxplots are intuitive for comparing distributions; stage groupings show clear time differences.               |
+| Understand mutation impact on survival                | Plotly interactive boxplot                   | Plotly enables dynamic exploration of survival distributions by KRAS status, suitable for non-clinical users.  |
+| Build an interpretable dashboard                      | Tableau bar charts, scatter plots, heat maps | These formats allow high-level insight while supporting filtering, drill-downs, and stakeholder interactivity. |
+| Compare death events across clinical/genetic features | Contingency tables + pie/bar charts          | Enables frequency-based comparisons (e.g., mortality by mutation status) for categorical factors.              |
+
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+* Descriptive Statistics & Grouping:
+Summary statsitics (e.g., median survival) by stage, mutation, and demographic variables were used to guide insights.
+* Data Encoding & Simplification:
+Complex variables like "Stage (TNM 8th edition)" and raw mutation codons were transformed into binary or categorical groupings (e.g., Early/Late stage, KRAS mutated/Wild-type) for interpretability.
+* Survival Analysis (Boxplots):
+Boxplots were used to visually compare survival time across categorical variables, highlighting potential clinical risk factors.
+* Classification Models:
+Logistic regression and tree-based models used to explore prediction of mortality using selected features.
+* Categorical Association Testing:
+Chi-square or Fisher's Exact Test used to assess dependence between mutation status and death event.
 
 ## Limitations
 
