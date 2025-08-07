@@ -38,8 +38,6 @@ Mutation columns (KRAS, EGFR) are simplified for interpretability:
     - Simplifies clinical genomic data for non-specialist interpretation.
     - Validate via logistic regression and categorical testing.
 
-
-
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
 * How was the data managed throughout the collection, processing, analysis and interpretation steps?
@@ -54,27 +52,40 @@ Mutation columns (KRAS, EGFR) are simplified for interpretability:
 * Did the data limit you, and did you use an alternative approach to meet these challenges?
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
-## Limitations and Ethical considerations
-This project uses a clinical dataset of 125 patient records (30 in the discovery cohort and 95 in the validation cohort). While modest by machine learning standards, this size is representative of many real-world clinical studies, where:
-    • Patient recruitment is challenging due to strict eligibility criteria.
-    • Early-phase or condition-specific trials often enroll dozens to low hundreds of participants.
-    • Larger, multi-center Phase III or IV studies may reach several hundred or thousands, but are less common for exploratory or single-institution studies.
-Limitations and Impact on Analysis
-    • Machine Learning Constraints
-        ○ Small datasets increase the risk of overfitting and reduce generalizability.
-        ○ Simple, interpretable models (linear and logistic regression) were chosen over complex algorithms to reflect responsible use of limited data.
-    • Statistical Power
-        ○ Hypothesis testing and regression analyses may have wider confidence intervals and lower sensitivity to small effects.
-        ○ Findings are therefore exploratory and hypothesis-generating, rather than conclusive.
-Bias and Representativeness
-    • Small sample sizes can overrepresent or underrepresent certain patient subgroups, introducing potential sampling bias.
-    • Event imbalance (alive vs deceased) may impact classification accuracy.
-    • All results are presented with contextual caveats, avoiding overgeneralization.
-Privacy and Responsible Reporting
-    • Data is fully de-identified, ensuring patient confidentiality.
-    • Analytical outputs are reported with caution and transparency, emphasizing that results are illustrative and educational.
-    • Future studies with larger, multi-center cohorts would enhance predictive power and clinical applicability.
+## Limitations
 
+This project analyzes a clinical dataset of 125 patient records (30 in the discovery cohort and 95 in the validation cohort). While modest by machine learning standards, this size reflects many real-world clinical studies, particularly those in early-phase or exploratory research.  
+
+### Data Size Constraints  
+- Small datasets increase the risk of overfitting and reduce generalizability.  
+- As a result, simpler, interpretable models (e.g. linear and logistic regression) were prioritized over complex models.  
+
+### Statistical Power  
+- With limited sample size, hypothesis testing may yield wide confidence intervals.  
+- Smaller effects may go undetected due to reduced sensitivity.  
+- Findings should be considered exploratory and hypothesis-generating.
+
+### Data Imbalance & Sampling Bias  
+- Class imbalance in outcomes (e.g. survival vs mortality) may influence model performance.  
+- Some subgroups (e.g. smokers, mutation carriers) may be underrepresented.  
+- These factors may introduce bias into both statistical summaries and predictive models.
+
+## Ethical Considerations
+
+### Patient Privacy and Data Use  
+- All data is de-identified; no personally identifiable information is present.  
+- The dataset was sourced from a public domain (Kaggle) with open access.  
+- The project adheres to ethical standards for secondary data use.
+
+### Transparency and Interpretation  
+- All findings are presented with appropriate context and caveats.  
+- Interpretations avoid overstating significance or suggesting clinical applicability.  
+- Code, assumptions, and data transformations are openly documented.
+
+### Responsible Use of Clinical Data  
+- Analytical outputs are for illustrative and educational purposes only.  
+- No clinical decisions should be derived from this project’s outputs.  
+- Future validation with larger, multi-center datasets would be required for clinical relevance.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
