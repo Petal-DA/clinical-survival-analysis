@@ -1,7 +1,6 @@
 # Capstone Project - Clinical Survival Analysis
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
-
+**Clinical Survival** This project investigates clinical survival data with the aim of uncovering patterns in patient outcomes based on tumour characteristics and genetic mutation status. It combines data cleaning, exploratory analysis, and interactive visualisations to support clear, evidence-based insights. The analysis is tailored for data analysts, developers, and non-clinical stakeholders interested in healthcare data interpretation, with visual tools built in Python (matplotlib, seaborn, Plotly) and Tableau.
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
