@@ -6,8 +6,16 @@
 
 
 ## Dataset Content
-* Discovery: 30 rows × 10 columns, complete
-* Validation: 95 rows × 14 columns, sparse Type.Adjuvant column
+
+* Discovery cohort: 30 patients × 10 columns, complete clinical fields (no missing values).
+* Validation cohort: 95 patients × 14 columns, includes KRAS and EGFR mutation data with some missing values.
+
+**Note:** The dataset is described as "clinical data for both discovery and validation cohorts" on Kaggle, but it is not specified whether the data is simulated or derived from real-world electronic health records. For the purposes of this project, it will be treated as a realistic case study reflecting the kinds of data seen in single-institution clinical datasets.
+
+Mutation columns (KRAS, EGFR) are simplified for interpretability:
+- "Mutated" = any non-negative result
+- "Wild-type" = 'Negative'
+- "Unknown" = missing data
 
 
 ## Business Requirements
