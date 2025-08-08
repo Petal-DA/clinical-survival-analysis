@@ -39,44 +39,70 @@ Mutation columns (KRAS, EGFR) are simplified for interpretability:
     - Validate via logistic regression and categorical testing.
 
 ## Project Plan
-This project followed a structured, end-to-end data science workflow consisting of:
 
-* Data Ingestion & Understanding:
-Two datasets (discovery and validation cohorts) were loaded and reviewed for structure, completeness, and relevance to the business goals.
-* Data Cleaning & Preparation:
-Column names were standardized, missing data handled appropriately, and categorical variables (e.g. mutation status, stage) were simplified for interpretability.
-* Exploratory Data Analysis (EDA):
-Distribution plots and survival-time comparisons were generated using Python visualisation libraries (matplotlib, seaborn, plotly). Key survival-related variables were identified.
-* Modelling:
-Predictive models developed to explore how clinical and genomic factors influence survival outcomes.
-* Dashboard & Communication:
-Tableau used to build a visual analytics dashboard designed for stakeholders without technical or clinical backgrounds.
-* Interpretation & Documentation:
-Results were interpreted in context, with transparent assumptions and limitations outlined throughout.
+This project follows a structured workflow typical of data analytics methodology:
 
-This plan aligns with industry-standard data science pipelines while being flexible enough to accommodate clinical data constraints.
+1. **Problem Framing**: Define the clinical relevance of survival analysis and genetic mutation status (e.g., KRAS/EGFR) in non-small cell lung cancer.
+2. **Data Acquisition & Understanding**: Load and inspect two datasets — Discovery (n = 30) and Validation (n = 95) cohorts. Summarise their structure and completeness.
+3. **Data Cleaning & Preprocessing**:
+   - Address missing values
+   - Standardise formats (e.g., mutation status, adjuvant therapy)
+   - Encode categorical variables for modeling
+4. **Exploratory Data Analysis (EDA)**:
+   - Visualise survival patterns by stage and mutation
+   - Compute correlations
+   - Perform basic hypothesis testing (e.g., t-test, ANOVA)
+5. **Modeling**:
+   - Fit interpretable models (logistic regression, linear regression)
+   - Evaluate predictors of mortality and survival time
+6. **Dashboard Development**:
+   - Create at least 4 Tableau visualisations (bar chart, scatter plot, pie chart, heatmap)
+   - Tailor output for both technical and non-technical users
+7. **Documentation & Deployment**:
+   - Maintain a well-commented GitHub repository
+   - Use markdown, visual summaries, and AI-assisted prompts (Copilot, ChatGPT) to enhance clarity and interpretation
+
+This plan ensures that data cleaning, analysis, and interpretation follow a logical progression. Tools such as Git, Jupyter, Tableau, and Python libraries (e.g., Pandas, Seaborn, Plotly) support reproducibility and visual clarity.
 
 
-## Rationale to map Business Requirements to Data Visualisations
-| Business Requirement                                  | Visualisation Type                           | Rationale                                                                                                      |
-| ----------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Assess survival by stage                              | Seaborn boxplot (Python)                     | Boxplots are intuitive for comparing distributions; stage groupings show clear time differences.               |
-| Understand mutation impact on survival                | Plotly interactive boxplot                   | Plotly enables dynamic exploration of survival distributions by KRAS status, suitable for non-clinical users.  |
-| Build an interpretable dashboard                      | Tableau bar charts, scatter plots, heat maps | These formats allow high-level insight while supporting filtering, drill-downs, and stakeholder interactivity. |
-| Compare death events across clinical/genetic features | Contingency tables + pie/bar charts          | Enables frequency-based comparisons (e.g., mortality by mutation status) for categorical factors.              |
+## Rationale to Map Business Requirements to Data Visualisations
+
+Each visualisation in this project is directly tied to a business requirement or analytical goal:
+
+| Business Requirement                            | Visualisation Type                      | Rationale |
+|--------------------------------------------------|------------------------------------------|-----------|
+| Identify survival differences by stage of disease   | Seaborn boxplots, Tableau bar chart      | Visualise median survival time and variability across cancer stages |
+| Explore KRAS/EGFR mutation effects               | Plotly stacked bar plot, Tableau pie chart    | Highlight mutation status distribution and outcome association |
+| Identify correlations between numerical features | Seaborn heatmap                          | Guide feature selection, flag collinearity |
+| Deliver interactive insights                     | Tableau dashboard (multiple visuals)     | Enable intuitive filtering and storytelling for both clinical and technical audiences |
+
+These choices prioritise interpretability and accessibility for both data scientists and stakeholders less familiar with clinical contexts.
 
 
-## Analysis techniques used
-* Descriptive Statistics & Grouping:
-Summary statsitics (e.g., median survival) by stage, mutation, and demographic variables were used to guide insights.
-* Data Encoding & Simplification:
-Complex variables like "Stage (TNM 8th edition)" and raw mutation codons were transformed into binary or categorical groupings (e.g., Early/Late stage, KRAS mutated/Wild-type) for interpretability.
-* Survival Analysis (Boxplots):
-Boxplots were used to visually compare survival time across categorical variables, highlighting potential clinical risk factors.
-* Classification Models:
-Logistic regression and tree-based models used to explore prediction of mortality using selected features.
-* Categorical Association Testing:
-Chi-square or Fisher's Exact Test used to assess dependence between mutation status and death event.
+## Analysis Techniques Used
+
+This project applies several foundational and intermediate data analysis techniques:
+
+- **Descriptive Statistics**:
+  - Summary statistics (mean, median, standard deviation) for survival and numeric features
+- **Data Visualisation**:
+  - Used `Seaborn`, `Matplotlib`, and `Plotly` to visualise survival distributions, correlations, and mutation associations
+- **Hypothesis Testing**:
+  - t-tests and ANOVA to examine survival differences by stage and mutation status
+- **Categorical Association**:
+  - Fisher’s exact test and Chi-square test to analyse relationships between genetic mutations and outcomes
+- **Predictive Modeling**:
+  - Logistic Regression: Predicts mortality (binary)
+  - Linear Regression: Models survival time (continuous)
+- **Data Preprocessing**:
+  - Categorical encoding with `pandas.get_dummies`
+  - Filtering unknown/missing data responsibly
+
+**Use of AI Tools**:
+- GitHub Copilot and ChatGPT assisted with:
+  - Writing/optimising code snippets
+  - Markdown generation and ideation
+  - Clarifying statistical methodology and simplifying clinical concepts for wider audiences
 
 ## Limitations
 
