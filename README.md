@@ -97,8 +97,14 @@ This project applies several foundational and intermediate data analysis techniq
 - **Data Preprocessing**:
   - Categorical encoding with `pandas.get_dummies`
   - Filtering unknown/missing data responsibly
+  
+ Notebook 3 focused on predictive modeling for clinical outcomes. The following techniques were applied:
+- **Logistic Regression**: To assess the association between KRAS mutation status and mortality, both univariate and multivariate models were fit. A reduced model was used to resolve convergence issues due to multicollinearity.
+- **Kaplan-Meier Survival Analysis**: Used to visualize and compare survival probabilities over time by KRAS status.
+- **Log-Rank Test**: Assessed statistical significance between survival curves.
+- **Odds Ratio Visualization**: Bar plots with 95% confidence intervals were created for model interpretation.
 
-**Use of AI Tools**:
+- **Use of AI Tools**:
 - GitHub Copilot and ChatGPT assisted with:
   - Writing/optimising code snippets
   - Markdown generation and ideation
