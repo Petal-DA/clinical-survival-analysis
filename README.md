@@ -1,7 +1,5 @@
 # Capstone Project - Clinical Survival Analysis
 
-**Clinical Survival** 
-
 This project investigates clinical survival data with the aim of uncovering patterns in patient outcomes based on tumour characteristics and genetic mutation status. It combines data cleaning, exploratory analysis, and interactive visualisations to support clear, evidence-based insights. The analysis is tailored for data analysts, developers, and non-clinical stakeholders interested in healthcare data interpretation, with visual tools built in Python (matplotlib, seaborn, Plotly) and Tableau.
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -205,6 +203,11 @@ These issues were identified and resolved through iterative testing and cross-ch
 * seaborn for enhanced statistical visualisations (e.g., boxplots, correlation heatmaps).
 * plotly for interactive plot in exploratory data analysis.
 * statsmodels for logistic regression modelling and generation of statistical summaries.
+
+## Project Summary
+
+This project integrated statistical analysis, predictive modelling, and interactive visualisations to examine how clinical and genomic factors influence lung cancer survival. The resulting Tableau dashboard distills complex data into clear, interactive insights tailored for both technical and non-technical audiences. While findings are exploratory due to dataset limitations, the approach provides a solid framework for future validation and extension in larger, more representative cohorts.
+
 
 ## Credits 
 ### Content 
