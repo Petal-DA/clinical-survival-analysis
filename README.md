@@ -146,10 +146,40 @@ This project analyzes a clinical dataset of 125 patient records (30 in the disco
 - Future validation with larger, multi-center datasets would be required for clinical relevance.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+
+The interactive Tableau dashboard was designed to communicate the project’s key clinical insights to both technical and non-technical audiences.  
+It contains four main visualisations arranged for intuitive navigation and filtering:
+
+1. **Mortality by KRAS Mutation Status** – A grouped bar chart comparing mortality rates between KRAS wild-type and KRAS-mutated patients. Designed for quick comparison of categorical outcomes.
+2. **Survival Time by Sex** – A box-and-whisker plot showing the distribution of survival days by patient sex, highlighting differences in median survival and spread.
+3. **Age vs Survival Days** – A scatter plot illustrating the relationship between patient age and survival time, with trend lines and shapes to differentiate sex.
+4. **KRAS vs EGFR Mutation Status** – A heatmap showing the intersection of KRAS and EGFR mutation profiles and the corresponding patient counts.
+
+### Interactivity and Filters
+The dashboard includes filters for:
+- **Cohort**
+- **KRAS Mutation Status**
+- **EGFR Mutation Status**
+
+- **KRAS Mutation Status**
+Toggle between wild-type and mutated cases to assess differences in survival and other metrics.
+- **EGFR Mutation Status**
+Focus on wild-type or mutated EGFR to explore patterns and associations.
+- **Event (Death / Alive)**
+Isolate patients based on survival outcome.
+- **Sex (Male / Female)**
+Examine survival and clinical patterns stratified by patient sex.
+
+These filters allow users to explore subsets of the data interactively and see how key metrics shift across different patient groups.
+
+### Design for Mixed Audiences
+- **Non-technical users** benefit from clear labelling, intuitive colour-coding, and concise captions beneath each chart.
+- **Technical users** can explore more granular details through tooltips, which display exact counts, percentages, and category definitions on hover.
+
+### Live Dashboard
+The dashboard is publicly accessible via Tableau Public:  
+[View the Live Dashboard](https://public.tableau.com/app/profile/petal.smart/viz/clinical_survival_analysis_dashboard/ClinicalSurvivalDashboard?publish=yes)
+
 
 ## Unfixed Bugs
 * Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
