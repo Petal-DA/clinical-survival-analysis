@@ -157,10 +157,6 @@ It contains four main visualisations arranged for intuitive navigation and filte
 
 ### Interactivity and Filters
 The dashboard includes filters for:
-- **Cohort**
-- **KRAS Mutation Status**
-- **EGFR Mutation Status**
-
 - **KRAS Mutation Status**
 Toggle between wild-type and mutated cases to assess differences in survival and other metrics.
 - **EGFR Mutation Status**
