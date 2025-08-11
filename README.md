@@ -1,6 +1,7 @@
 # Capstone Project - Clinical Survival Analysis
 
 **Clinical Survival** 
+
 This project investigates clinical survival data with the aim of uncovering patterns in patient outcomes based on tumour characteristics and genetic mutation status. It combines data cleaning, exploratory analysis, and interactive visualisations to support clear, evidence-based insights. The analysis is tailored for data analysts, developers, and non-clinical stakeholders interested in healthcare data interpretation, with visual tools built in Python (matplotlib, seaborn, Plotly) and Tableau.
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
@@ -28,13 +29,14 @@ Mutation columns (KRAS, EGFR) are simplified for interpretability:
 * Stage is associated with shorter survival time
     - Validate via ANOVA or regression coefficient.
 
-* KRAS mutations are associated with higher mortality risk
+* KRAS genetic mutations are associated with higher mortality risk
     - "Mutation" is simplified as any change in the KRAS gene detected in the dataset 
       (e.g., G12 or G13 codon variants) versus wild-type (no mutation detected).
     - Validate via logistic regression using Event (0/1) as outcome and KRAS status as predictor.
     - Include Fisher's exact or Chi-square test for categorical comparison of mutation vs event.
 
-* Driver mutations (KRAS or EGFR) are associated with higher mortality risk
+* Driver mutations (in KRAS or EGFR genes) are associated with higher mortality risk
+    - EGFR and KRAS are genes that help regulate cell growth. Mutations in either gene can cause cells to grow uncontrollably, which is a common feature in many cancers.
     - Simplifies clinical genomic data for non-specialist interpretation.
     - Validate via logistic regression and categorical testing.
 
@@ -88,12 +90,13 @@ This project applies several foundational and intermediate data analysis techniq
 - **Data Visualisation**:
   - Used `Seaborn`, `Matplotlib`, and `Plotly` to visualise survival distributions, correlations, and mutation associations
 - **Hypothesis Testing**:
-  - t-tests and ANOVA to examine survival differences by stage and mutation status
+  - ANOVA to examine survival differences by stage
+  - Log-rank test to compare survival between KRAS groups (mutated and wild-type)
 - **Categorical Association**:
   - Fisher’s exact test and Chi-square test to analyse relationships between genetic mutations and outcomes
 - **Predictive Modeling**:
-  - Logistic Regression: Predicts mortality (binary)
-  - Linear Regression: Models survival time (continuous)
+  - Logistic Regression: Predicts mortality (binary outcome)
+  - Linear Regression: Models survival time (continuous variable)
 - **Data Preprocessing**:
   - Categorical encoding with `pandas.get_dummies`
   - Filtering unknown/missing data responsibly
@@ -146,31 +149,29 @@ This project analyzes a clinical dataset of 125 patient records (30 in the disco
 - Future validation with larger, multi-center datasets would be required for clinical relevance.
 
 ## Dashboard Design
-
-The interactive Tableau dashboard was designed to communicate the project’s key clinical insights to both technical and non-technical audiences.  
-It contains four main visualisations arranged for intuitive navigation and filtering:
-
-1. **Mortality by KRAS Mutation Status** – A grouped bar chart comparing mortality rates between KRAS wild-type and KRAS-mutated patients. Designed for quick comparison of categorical outcomes.
-2. **Survival Time by Sex** – A box-and-whisker plot showing the distribution of survival days by patient sex, highlighting differences in median survival and spread.
-3. **Age vs Survival Days** – A scatter plot illustrating the relationship between patient age and survival time, with trend lines and shapes to differentiate sex.
-4. **KRAS vs EGFR Mutation Status** – A heatmap showing the intersection of KRAS and EGFR mutation profiles and the corresponding patient counts.
+The interactive Tableau dashboard communicates the project’s key clinical insights to both technical and non-technical audiences.  
+It contains four visualisations arranged for intuitive navigation and filtering:
+1. **Mortality by KRAS Mutation** – Grouped bar chart comparing mortality rates between KRAS wild-type and KRAS-mutated patients.
+2. **Survival Time by Sex** – Box-and-whisker plot showing the distribution of survival days by patient sex, highlighting differences in median survival and spread.
+3. **Age vs Survival Days** – Scatter plot illustrating the relationship between patient age and survival time, with trend lines and shapes to differentiate sex.
+4. **KRAS vs EGFR Mutation** – Heatmap showing the intersection of KRAS and EGFR mutation profiles and corresponding patient counts.
 
 ### Interactivity and Filters
 The dashboard includes filters for:
-- **KRAS Mutation Status**
-Toggle between wild-type and mutated cases to assess differences in survival and other metrics.
-- **EGFR Mutation Status**
-Focus on wild-type or mutated EGFR to explore patterns and associations.
+- **KRAS Mutation**
+Toggle between wild-type and mutated cases.
+- **EGFR Mutation**
+Focus on wild-type or mutated EGFR genetic status.
 - **Event (Death / Alive)**
 Isolate patients based on survival outcome.
 - **Sex (Male / Female)**
 Examine survival and clinical patterns stratified by patient sex.
 
-These filters allow users to explore subsets of the data interactively and see how key metrics shift across different patient groups.
+These filters allow users to explore subsets of the data and see how key metrics shift across different patient groups.
 
 ### Design for Mixed Audiences
-- **Non-technical users** benefit from clear labelling, intuitive colour-coding, and concise captions beneath each chart.
-- **Technical users** can explore more granular details through tooltips, which display exact counts, percentages, and category definitions on hover.
+- **Non-technical users** benefit from clear labels, intuitive colour coding, and concise captions.
+- **Technical users** can explore more granular details through tooltips, which display counts, percentages, and category definitions on hover.
 
 ### Live Dashboard
 The dashboard is publicly accessible via Tableau Public:  
@@ -178,36 +179,42 @@ The dashboard is publicly accessible via Tableau Public:
 
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+No critical bugs remain in the final deliverable. Minor issues during development included:
+* Tableau dashboard filter behaviour
+In early iterations, interacting with some charts unintentionally hid entire data categories. This was resolved by removing unnecessary filters.
+* Inconsistent variable naming between datasets
+The cleaned discovery and validation datasets used different default column names and encodings (e.g., Sex_Male vs sex_M). This caused errors in early analysis and model building. This was addressed by standardising column names and focusing the Tableau dashboard on the validation dataset, which had a consistent structure.
+
+These issues were identified and resolved through iterative testing and cross-checking outputs.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+* Challenges faced:
+  - Tableau’s interface was still fairly unfamiliar, leading to delays in creating interactive and visually appealing charts. This was overcome with guided exploration, assistance from Chat GPT, step-by-step adjustments, and testing chart interactivity.
+  - Convergence issues in early logistic regression models due to multicollinearity. This was addressed by simplifying models and removing redundant predictors.
 
+* Future plans:
+  - Explore advanced modelling techniques (e.g., penalised regression, Cox proportional hazards models) to improve predictive performance.
+  - Incorporate more comprehensive clinical datasets with larger sample sizes.
+  - Enhance Tableau dashboards with more granular filters and patient sub-cohort breakdowns.
+  - Explore the same or similar datasets using PowerBI
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
+* pandas for data loading, cleaning, and manipulation - Example: converting categorical variables into dummy variables for modelling.
+* numpy for numerical operations, including array handling and statistical calculations.
+* matplotlib for the creation of survival curves and odds ratio visualisations.
+* seaborn for enhanced statistical visualisations (e.g., boxplots, correlation heatmaps).
+* plotly for interactive plot in exploratory data analysis.
+* statsmodels for logistic regression modelling and generation of statistical summaries.
 
 ## Credits 
-
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
 ### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Jupyter notebook structure and README template adapted from the Code Institute’s Capstone Project template and guidelines.
+- Statistical interpretation methods informed by publicly available resources on Kaplan–Meier survival analysis and logistic regression.
+- Tableau dashboard design informed by the wireframe created during project planning.
 
 ### Media
+- Dashboard wireframe created using Balsamiq.
+- All charts and visualisations generated by the author using Python (matplotlib, seaborn, plotly) and Tableau Public.
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements
+* Special thanks to Code Institute faciltator, Emma Lamont; data coach, Spencer Barriball; and subject matter expert, Niel McEwen, for general guidance and coaching on statistical approach and visualisation clarity.
