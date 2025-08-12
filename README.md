@@ -224,6 +224,8 @@ This project integrated statistical analysis, predictive modelling, and interact
 - Jupyter notebook structure and README template adapted from the Code Institute’s Capstone Project template and guidelines.
 - Statistical interpretation methods informed by publicly available resources on Kaplan-Meier survival analysis and logistic regression.
 - Tableau dashboard design informed by the wireframe created during project planning.
+- OpenAI's ChatGPT for code and markdown support as well as visual guidance.
+- GitHub Copilot installed in VS Code for resolving inline code error messages.
 
 ### Media
 - Dashboard wireframe created using Balsamiq.
