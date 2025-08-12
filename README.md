@@ -9,6 +9,11 @@ This project investigates clinical survival data with the aim of uncovering patt
 * Discovery cohort: 30 patients × 10 columns, complete clinical fields (no missing values).
 * Validation cohort: 95 patients × 14 columns, includes KRAS and EGFR gene mutation data with some missing values.
 
+### Key Definitions
+
+* KRAS (Kirsten Rat Sarcoma Viral Oncogene Homolog) - A gene that produces a protein involved in cell signalling. Mutations in KRAS can lead to uncontrolled cell growth and are commonly linked to various cancers.
+* EGFR (Epidermal Growth Factor Receptor) - A gene that codes for a protein on cell surfaces that helps regulate cell growth and division. Mutations in EGFR can cause abnormal signalling and are often associated with cancer development.
+
 **Note:** The dataset is described as "electronic clinical data" for both discovery and validation cohorts on Kaggle (https://www.kaggle.com/datasets/imtkaggleteam/clinical-dataset), but it is not specified whether the data is simulated or derived from real-world electronic health records. For the purposes of this project, it will be treated as a realistic case study reflecting the kinds of data seen in single-institution clinical datasets.
 
 Gene mutation columns (KRAS, EGFR) are simplified for interpretability:
